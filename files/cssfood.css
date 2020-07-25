@@ -2,25 +2,32 @@ body{
     background-color: #f5deb3;
 }
 
-#menu ul {
-    margin: 0;
-    padding: 15px;
+/* Changes outside the list box */
+
+.menu ul {
+
+    text-align: center;
     background-color: #704d0f;
     list-style: none;
 }
 
-#menu ul li {
-    padding: 100px;
-    display: inline;
+/* Changes the list */
+
+.menu ul li {
+    float: left;
+    width: 200px;
 }
 
-#menu ul li a {
-    padding: 10px 10px;
+/* Changes list text */
+
+.menu ul li a {
     font-size: 25px;
     color: white;
     text-decoration: none;
 }
 
-#menu ul li a:hover{
+/* Changes list text IF the mouse is on it */
+
+.menu ul li a:hover {
     color: #2d1f06;
 }
