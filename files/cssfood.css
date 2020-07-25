@@ -10,6 +10,7 @@ body{
 }
 
 #menu ul li {
+    padding: 100px;
     display: inline;
 }
 
