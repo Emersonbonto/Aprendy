@@ -2,32 +2,43 @@ body{
     background-color: #f5deb3;
 }
 
-/* Changes outside the list box */
-
-.menu ul {
-
-    text-align: center;
-    background-color: #704d0f;
-    list-style: none;
+.menu ul{
+    padding: 0;
+    margin: 0;
 }
 
-/* Changes the list */
-
-.menu ul li {
+.menu ul li{
+    background-color: #664100;
+    color: white;
     float: left;
-    width: 200px;
+    width: 230px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    position: relative;
 }
 
-/* Changes list text */
+.menu ul li:hover{
+    background-color: #2d1f06;
+}
 
-.menu ul li a {
-    font-size: 25px;
+.menu ul li:hover > ul{
+    display: block;
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu ul ul ul{
+    margin-left: 201px;
+    top: 0;
+    position: absolute;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
-}
-
-/* Changes list text IF the mouse is on it */
-
-.menu ul li a:hover {
-    color: #2d1f06;
 }
