@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    background: url(img/fundo.jpg);
+    height: 100%;    
+}
+
+#titulo {
+    padding-top: 20%;
+    font-size: 60px;
+    line-height: 0.6;
+}
+
+#subtitulo {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+}
+
+#acao {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#imagem_fundo {
+    text-align: center;
+    color: white;
+}
