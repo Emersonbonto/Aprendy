@@ -1,65 +1,28 @@
-body{
-    background-color: #f5deb3;
-}
-
-.expli{
-    max-width: 50%;
-}
-
-.titles {
-    text-align: center;
-}
-
-a {
-    padding: 5px;
-    background-color: #664100;
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #2d1f06;
-}
-
-.menu ul { 
-    border: 0;
-    padding: 0;
+html, body {
     margin: 0;
 }
-
-.menu ul li {
-    background-color: #664100;
-    color: white;
-    float: left;
-    width: 16.66%;
-    height: 40px;
-    display: inline-block;
+#intro {
+    background: url("images/fundo.jpg");
+    background-size: 100% 100%;
+    height: 100%;
     text-align: center;
-    line-height: 40px;
-    font-size: 25px;
-    position: relative;
 }
-
-.menu ul li:hover {
-    background-color: #2d1f06;
-}
-
-.menu ul li:hover > ul {
-    display: block;
-}
-
-.menu ul ul {
-    display: none;
-}
-
-.menu ul ul ul {
-    margin-left: 230px;
-    top: 0;
-    position: absolute;
-}
-
-.menu a {
-    background-color: rgba(0, 0, 0, 0);
+#titulo {
     color: white;
-    text-decoration: none;
+    padding-top: 20%;
+    font-size: 70px;
+    line-height: 0.6;
+    
+}
+#subtitulo {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 1px 1px  black;
+}
+#acao {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px ;
 }
