@@ -1,11 +1,7 @@
-html, body {
-    margin: 0;
-}
-
 body {
     background: url(img/fundo.webp);
     background-repeat: no-repeat;
-    background-size: 100%, 100%;  
+    background-size: 100%, 100%;
 }
 
 #titulo {
@@ -33,5 +29,5 @@ body {
 
 #intro {
     text-align: center;
-    color: crimson;
+    color: #f88;
 }
