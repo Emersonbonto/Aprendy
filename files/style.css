@@ -1,33 +1,28 @@
-body {
-    background: url(img/fundo.webp);
-    background-repeat: no-repeat;
+html, body {
+    margin: 0;
+}
+#intro {
+    color: #f88;
+    background: url("img/fundo.webp");
+    height: 100%;
     background-size: 100%, 100%;
+    text-align: center;
+    background-repeat: no-repeat;
 }
-
-#titulo {
+#intro h1 {
     padding-top: 20%;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 0.6;
+    
 }
-
-#subtitulo {
+#intro h2 {
     margin-left: 20%;
     margin-right: 20%;
     border-top: 3px solid;
+    text-shadow: 1px 1px crimson;
 }
-
-#acao {
-    border: 1px solid;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    color: currentColor;
-}
-
-#acao:hover{
-    text-decoration: underline;
-}
-
-#intro {
-    text-align: center;
-    color: #f88;
+#intro a {
+    color: none;
+    border: 1px none solid;
+    padding: 10px 20px 10px 20px ;
 }
