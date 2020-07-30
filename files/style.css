@@ -1,28 +1,54 @@
-html, body {
+* {
+    box-sizing: border-box;
     margin: 0;
 }
+
 #intro {
     color: #f88;
     background: url("img/fundo.webp");
+    background-position: center;
     height: 100%;
-    background-size: 100%, 100%;
+    background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
 }
+
 #intro h1 {
     padding-top: 20%;
     font-size: 70px;
     line-height: 0.6;
     
 }
+
 #intro h2 {
+    margin: 20px 0px;
     margin-left: 20%;
     margin-right: 20%;
     border-top: 3px solid;
     text-shadow: 1px 1px crimson;
 }
+
 #intro a {
-    color: none;
-    border: 1px none solid;
-    padding: 10px 20px 10px 20px ;
+    text-decoration: none;
+    color: inherit;
+    border: 1px #f88 solid;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+#project {
+    background-color: #f7f7f7;
+}
+
+section *{
+    padding: 20px 20px 0px 20px;
+}
+
+section p {
+    width: 50%;
+}
+
+#subjects img{
+    padding-bottom: 10px;
+    width: 100px;
 }
