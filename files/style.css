@@ -1,6 +1,14 @@
 * {
-    box-sizing: border-box;
     margin: 0;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #intro {
@@ -29,19 +37,21 @@
 }
 
 #intro a {
-    text-decoration: none;
-    color: inherit;
     border: 1px #f88 solid;
     border-radius: 8px;
     padding: 10px 20px 10px 20px;
 }
 
-#project {
+.darker {
     background-color: #f7f7f7;
 }
 
-section *{
-    padding: 20px 20px 0px 20px;
+.organized h1, h2, h3, h4, h5, h6, p, img , iframe {
+    padding: 0px 0px 20px 20px;
+}
+
+.linkintext {
+    padding: 0;
 }
 
 section p {
@@ -49,6 +59,5 @@ section p {
 }
 
 #subjects img{
-    padding-bottom: 10px;
-    width: 100px;
+    width: 50px;
 }
