@@ -2,14 +2,36 @@
     margin: 0;
 }
 
-a:hover{
-    text-decoration: underline;
+.organized h1, h2, h3, h4, h5, h6, p {
+    margin: 20px 0px;
+}
+
+section {
+    float: left;
+    padding: 20px;
+}
+
+iframe {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#intro a:hover {
+    background-color: brown;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
 
 #intro {
     color: #f88;
@@ -42,22 +64,88 @@ a {
     padding: 10px 20px 10px 20px;
 }
 
+.column {
+    float: left;
+    position: relative;
+}
+
+.two {
+    width: 40%;
+    padding: 0 5%;
+}
+
+.three {
+    width: 29.25%;
+    padding: 0 2%;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.centralized {
+    text-align: center;
+}
+
 .darker {
     background-color: #f7f7f7;
 }
 
 .organized h1, h2, h3, h4, h5, h6, p, img , iframe {
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 0px 0px;
 }
 
 .linkintext {
     padding: 0;
 }
 
-section p {
+#subjects img {
+    width: 50px;
+}
+
+#aboutme {
+    background-color: rgb(240, 240, 240);
+}
+
+#aboutme img {
     width: 50%;
 }
 
-#subjects img{
+#logo{
     width: 50px;
+    margin-left: 5%;
+    padding-top: 5px;
+    position: absolute;
+}
+
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+
+#menu li {
+    height: 20px;
+    float: left;
+    padding: 20px 10px 20px 10px;
+}
+
+#menu li:hover{
+    background-color:brown;
+}
+
+header {
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+
+footer {
+    width: 100%;
+    background-color: brown;
+    float: left;
 }
