@@ -55,14 +55,14 @@ footer {
     background-color: #f7f7f7;
 }
 
-.organized h1, h2, h3, h4, h5, h6, p{
+.organized h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 20px 0px;
 }
 
 /* Id's */
 
-#logo{
+#logo {
     width: 50px;
     margin-left: 2.5%;
     top: 50%;
