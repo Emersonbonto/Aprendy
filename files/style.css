@@ -1,18 +1,18 @@
+/* Universal Styles */
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
-.organized h1, h2, h3, h4, h5, h6, p {
-    margin: 20px 0px;
+html, body {
+    height: 100%;
 }
 
-section {
+
+section, footer{
     float: left;
-    padding: 20px;
-}
-
-iframe {
-    max-width: 100%;
+    padding: 0px 20px 20px 20px;
+    width: 100%;
 }
 
 img {
@@ -22,66 +22,20 @@ img {
     width: 100%;
 }
 
-#intro a:hover {
-    background-color: brown;
-}
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
-
-#intro {
-    
-    background: url("imgs/fundo.webp");
-    background-position: center;
-    height: 100%;
-    background-size: cover;
-    text-align: center;
-    color: #f88;
-    background-repeat: no-repeat;
+iframe {
+    max-width: 100%;
 }
 
-#intro h1 {
-    padding-top: 20%;
-    font-size: 70px;
-    line-height: 0.6;
-    
+footer {
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-#intro h2 {
-    margin: 20px 0px;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-top: 3px solid;
-    text-shadow: 1px 1px crimson;
-}
-
-#intro a {
-    border: 1px #f88 solid;
-    border-radius: 8px;
-    padding: 10px 20px 10px 20px;
-}
-
-.column {
-    float: left;
-    position: relative;
-}
-
-.two {
-    width: 40%;
-    padding: 0 5%;
-}
-
-.three {
-    width: 29.25%;
-    padding: 0 2%;
-}
-
-.justified {
-    text-align: justify;
-}
+/* Classes */
 
 .centralized {
     text-align: center;
@@ -91,16 +45,65 @@ a {
     background-color: #f7f7f7;
 }
 
-.organized h1, h2, h3, h4, h5, h6, p, img , iframe {
-    padding: 0px 0px 0px 0px;
+.organized h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 20px 0px;
 }
 
-.linkintext {
-    padding: 0;
+/* Id's */
+
+#intro {
+    background: url(imgs/fundo.webp);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+#introtxt {
+    color: #f88;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#introtxt h1 {
+    font-size: 70px;
+    line-height: 0.6;
+}
+
+#introtxt h2 {
+    margin: 20px 19.11%;
+    text-shadow: 1px 1px crimson;
+    border-top: 3px solid;
+}
+
+#introtxt a {
+    border: 1px solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+}
+
+#introtxt a:hover {
+    background-color: brown;
+}
+
+#project iframe {
+    margin-top: 20px;
 }
 
 #subjects img {
     width: 50px;
+}
+
+#recomendations a {
+    font-weight: bold;
+}
+
+#recomendations a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.5px;
+    border-radius: 10px;
 }
 
 #aboutme {
@@ -108,44 +111,5 @@ a {
 }
 
 #aboutme img {
-    width: 50%;
-}
-
-#logo{
-    width: 50px;
-    margin-left: 5%;
-    padding-top: 5px;
-    position: absolute;
-}
-
-#menu {
-    float: right;
-    margin-right: 5%;
-    list-style: none;
-    margin-top: 0px;
-}
-
-#menu li {
-    height: 20px;
-    float: left;
-    padding: 20px 10px 20px 10px;
-}
-
-#menu li:hover{
-    background-color:brown;
-}
-
-header {
-    z-index: 10;
-    width: 100%;
-    height: 60px;
-    background-color: black;
-    color: white;
-    position: fixed;
-}
-
-footer {
-    width: 100%;
-    background-color: brown;
-    float: left;
+    width: 125px;
 }
