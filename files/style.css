@@ -49,6 +49,8 @@ footer {
 
 .centralized {
     text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
 }
 
 .darker {
@@ -56,7 +58,6 @@ footer {
 }
 
 .organized h1, h2, h3, h4, h5, h6, p {
-    padding: 0;
     margin: 20px 0px;
 }
 
