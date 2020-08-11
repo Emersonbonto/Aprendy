@@ -226,7 +226,7 @@ footer {
 {
     .column, .two, .three, .four {
         display: block;   
-        width: 80%;
+        width: 100%;
         padding: 0;
         margin: 10px auto;
         float: none;
