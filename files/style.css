@@ -1,10 +1,8 @@
 /* Universal Styles */
-@-ms-viewport{
-    width: device-width;
-}
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -29,7 +27,6 @@ header {
 }
 
 img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -54,11 +51,25 @@ footer {
     text-align: center;
 }
 
+.column {
+    float: left;
+    position: relative;
+}
+.two {
+    width: 40%;
+    margin: 0 5%;
+}
+
+.three {
+    width: 25%;
+    margin: 0 4.167%;
+}
+
 .darker {
     background-color: #f7f7f7;
 }
 
-.organized h1, h2, h3, h4, h5, h6, p {
+.organized h1, .organized h2, .organized h3, .organized h4, .organized h5, .organized h6, .organized p {
     margin: 20px 0px;
 }
 
@@ -79,13 +90,33 @@ footer {
     margin-top: 0px;
 }
 
+@media all and (max-width: 530px)
+{
+    #logo {
+        margin-left: 0;
+        padding-top: 5px;
+        transform: translateX(-50%);
+        
+    }
+    #logodiv {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu {
+        visibility: hidden;
+    }
+}
+
 #menu li {
+    top: 50%;
+    height: 60px;
     float: left;
     padding: 20px 10px 20px 10px;
 }
 
 #menu li:hover{
-    height: 60px;
     background-color:brown;
 }
 
@@ -124,28 +155,36 @@ footer {
 
 #introtxt a:hover {
     background-color: brown;
+
 }
 
 #project iframe {
     margin-top: 20px;
 }
 
-#subjects p {
-    /*
-    margin-right: 33%;
-    margin-left: 33%;
-    */
+
+#project h2 {
+    font-size: 30px;
+}
+
+#project p {
+    text-align: justify;
+}
+
+#subjects * {
+    text-align: center;
 }
 
 #subjects img {
+    display: block;
     width: 50px;
 }
 
-#recomendations a {
+#recomendations a, #aboutme a {
     font-weight: bold;
 }
 
-#recomendations a:hover {
+#recomendations a:hover, #aboutme a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2.5px;
     border-radius: 10px;
@@ -156,6 +195,40 @@ footer {
     padding-bottom: 0;
 }
 
+#aboutme #ad {
+    margin-left: 12%; 
+}
+
 #aboutme img {
+    float: left;
     width: 125px;
+}
+
+@media all and (min-width: 426px)
+/* Pc version */
+{
+    #introtxt h2 {
+        margin: 20px 19.11%;
+    }
+
+    #aboutme #ad {
+        width: 15%;
+    }
+
+    #aboutme .two {
+        width: 5%;
+    }
+
+}
+
+@media all and (max-width: 425px) 
+/* Mobile version */
+{
+    .column, .two, .three, .four {
+        display: block;   
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+   }
 }
